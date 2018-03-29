@@ -7,7 +7,7 @@ def romanToInt(s):
     :type s: str
     :rtype: int
     """
-    tranform = {
+    transform = {
         'M': 1000,
         'D': 500,
         'C': 100,
@@ -18,7 +18,7 @@ def romanToInt(s):
     }
     result, prev_number = 0, 0
     for symbol in reversed(s):
-        number = tranform[symbol]
+        number = transform[symbol]
         if number >= prev_number:
             result += number
         else:
