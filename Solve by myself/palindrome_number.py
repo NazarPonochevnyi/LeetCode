@@ -1,8 +1,13 @@
+# 9. Palindrome Number
+# Python 3
+# https://leetcode.com/problems/palindrome-number
+
 def isPalindrome(x):
     """
     :type x: int
     :rtype: bool
     """
+    
     if x < 0: return False
     s_x = str(x)
     len_x = len(s_x)
